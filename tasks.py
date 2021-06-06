@@ -21,11 +21,12 @@ def comb(*args):
     return result
 
 def comb_without_zip(*args):
+    min_length = len(args[0])
     result = []
-    len_args = []
-    for x in args:
-        len_args.append(len(x))
-    for i in range(min(len_args)):
+    for list in args:
+        if len(list) < min_length:
+            min_length = len(list)
+    for i in range(min_length):
         it = []
         for x in args:
             it.append(x[i])
