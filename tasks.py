@@ -40,8 +40,3 @@ def merge_dict(d1,d2):
 def get_extension(fname):
     result = os.path.splitext(fname)
     return result[-1]
-
-print("Бога нет")
-print("Бога нет")
-print("Бога нет")
-print("Бога нет")
