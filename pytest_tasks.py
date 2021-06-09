@@ -18,7 +18,7 @@ def test_comb_without_zip():
     assert comb_without_zip([1, 2, 5], [2, 3, 6, 7]) == [[1, 2], [2, 3], [5, 6]]
 
 
-def get_extension():
+def test_get_extension():
     assert get_extension("test_file.txt") == ".txt"
 
 

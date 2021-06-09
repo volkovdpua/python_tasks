@@ -10,7 +10,7 @@ class tasks_test_case(unittest.TestCase):
     def setUp(self):
         pass
 
-    def filter_list(self):
+    def test_filter_list(self):
         res_list = filter_list([1, 5, 4, 3, 2], 4)
         self.assertEqual(res_list, [1, 3, 2])
 
@@ -22,11 +22,11 @@ class tasks_test_case(unittest.TestCase):
         res_list = comb_without_zip([1, 2, 5], [2, 3, 6, 7])
         self.assertEqual(res_list, [[1, 2], [2, 3], [5, 6]])
 
-    def merge_dict(self):
+    def test_merge_dict(self):
         res_dict = merge_dict({1: 2, 2: 4}, {3: 6})
         self.assertEqual(res_dict, {1: 2, 2: 4, 3: 6})
 
-    def get_extension(self):
+    def test_get_extension(self):
         extension = get_extension("test_file.txt")
         self.assertEqual(extension, ".txt")
 
