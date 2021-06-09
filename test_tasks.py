@@ -10,25 +10,26 @@ class tasks_test_case(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_task1(self):
+    def filter_list(self):
         res_list = filter_list([1, 5, 4, 3, 2], 4)
         self.assertEqual(res_list, [1, 3, 2])
 
-    def test_task2(self):
+    def test_find_matches(self):
         res_list = find_matches([1, 2, 3, 4], [2, 5, 7, 3])
         self.assertEqual(res_list, [2, 3])
 
-    def test_task3(self):
+    def test_comb_without_zip(self):
         res_list = comb_without_zip([1, 2, 5], [2, 3, 6, 7])
         self.assertEqual(res_list, [[1, 2], [2, 3], [5, 6]])
 
-    def test_task4(self):
+    def merge_dict(self):
         res_dict = merge_dict({1: 2, 2: 4}, {3: 6})
         self.assertEqual(res_dict, {1: 2, 2: 4, 3: 6})
 
-    def test_task5(self):
+    def get_extension(self):
         extension = get_extension("test_file.txt")
         self.assertEqual(extension, ".txt")
+
 
 if __name__ == '__main__':
     unittest.main()
